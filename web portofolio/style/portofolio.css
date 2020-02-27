@@ -1,0 +1,377 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+html {
+	font-size: 62.5%
+}
+
+body {
+	background-color: #1C1C1C !important;
+	font-family: Segoe UI;
+	font-weight: lighter;
+
+}
+
+
+.skills-bar ul li {
+	position: relative;
+	list-style: none;
+	color: white;
+	margin: 5rem 0;
+	font-weight: 500;
+	text-transform: uppercase;
+	font-size: 1.6rem;
+	font-weight: lighter;
+}
+
+.skills-bar ul li:before {
+	content: '';
+	position:absolute;
+	top: calc(100% + 1rem);
+	left: 0;
+	width: 100%;
+	height: 1.5rem;
+	background-color: #6B6B6B;
+	border-radius: 1000px;
+
+}
+
+.skills-bar ul li:after {
+	content: '';
+	position:absolute;
+	top: calc(100% + 1rem);
+	left: 0;
+	width: 0%;
+	height: 1.5rem;
+	background-color: white;
+	border-radius: 1000px;
+	animation-duration: .7s;
+	animation-timing-function: ease;
+	animation-fill-mode: forwards;
+
+}
+
+.front li.html:after {
+	animation-name: html;
+}
+
+@keyframes html {
+	to {
+		width: 70%;
+	}
+}
+
+.front li.css:after {
+	animation-name: css;
+}
+
+@keyframes css {
+	to {
+		width: 50%;
+	}
+}
+
+.front li.js:after {
+	animation-name: js;
+}
+
+@keyframes js {
+	to {
+		width: 10%;
+	}
+}
+
+.front li.bs:after {
+	animation-name: bs;
+}
+
+@keyframes bs {
+	to {
+		width: 10%;
+	}
+}
+
+.front li.php:after {
+	animation-name: php;
+}
+@keyframes php {
+	to {
+		width: 10%;
+	}
+}
+
+.front li.sql:after {
+	animation-name: sql;
+}
+@keyframes sql {
+	to {
+		width: 10%;
+	}
+}
+
+
+
+
+
+.design li.ps:after {
+	animation-name: ps;
+}
+
+@keyframes ps {
+	to {
+		width: 70%;
+	}
+}
+
+.design li.ai:after {
+	animation-name: ai;
+}
+
+@keyframes ai {
+	to {
+		width: 60%;
+	}
+}
+
+.design li.xd:after {
+	animation-name: xd;
+}
+
+@keyframes xd {
+	to {
+		width: 45%;
+	}
+}
+
+.app li.py:after {
+	animation-name: py;
+}
+
+@keyframes py {
+	to {
+		width: 50%;
+	}
+}
+
+.app li.go:after {
+	animation-name: go;
+}
+
+@keyframes go {
+	to {
+		width: 50%;
+	}
+}
+
+.app li.java:after {
+	animation-name: java;
+}
+
+@keyframes java {
+	to {
+		width: 10%;
+	}
+}
+
+.app li.c:after {
+	animation-name: c;
+}
+
+@keyframes c {
+	to {
+		width: 30%;
+	}
+}
+
+
+html {
+	font-size: 62.5%
+}
+body {
+	background-color: black;
+	font-family: Segoe UI;
+}
+nav {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	min-height: 8vh;
+	font-family: Segoe UI;
+	z-index: 1;
+}
+.logo {
+	margin-top: 1rem;
+	width: 7rem;
+	height: 4rem;
+}
+.nav-links {
+	display: flex;
+	width: 50%;
+	justify-content: space-around;
+}
+
+.nav-links a {
+	color: white;
+	text-decoration: none;
+	letter-spacing: 3px;
+	text-transform: uppercase;
+	font-size: 2.0rem;
+}
+
+.nav-links li {
+	list-style: none;
+}
+.hamburger {
+	display: none;
+}
+
+.hamburger div {
+	width: 20px;
+	height: 2px;
+	background-color: white;
+	margin: 5px;
+	transition: all 0.3s ease;
+	z-index: 1;
+}
+nav li {
+	position: relative;
+	top: 5%;
+}
+nav a:hover {
+	color: #8b8b8b;
+}
+
+nav a::before {
+	content: '';
+	display: block;
+	height: 0.3rem;
+	width: 0%;
+	background-color: white;
+	position: absolute;
+	top: 0;
+	transition: ease-in-out 250ms;
+}
+
+nav a:hover::before {
+	width: 100%;
+}
+
+@media screen and (min-width: 769px) {
+	body {
+		overflow-x: hidden;
+	}
+	.nav-links {
+		width: 60%;
+	}
+	.myphoto {
+	width: 35rem;
+	height: 10rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: auto;
+	display: none;
+	}
+	.skills-bar {
+	display: flex;
+	margin-top: 7%;
+	width:100%;
+	justify-content:space-between;
+	}
+	.front {
+		padding: 20px;
+		flex-basis: 30%;
+	}
+	.design {
+		padding: 20px;
+		flex-basis: 30%;
+	}
+	.app {
+		flex-basis: 30%;
+		padding: 20px;
+	}
+
+
+}
+
+@media screen and (max-width: 768px) {
+	body {
+		overflow-x: hidden;
+	}
+	nav a::before {
+	display: none;
+	}
+	.skills-bar {
+	width: 50%;
+	align-items: center;
+	position: absolute;
+	left: 50%;
+	transform: translate(-50%);
+	margin-top: 20%;
+	}
+	.nav-links {
+		position: absolute;
+		right: 0px;
+		height: 92vh;
+		top: 8vh;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		background-color: #1C1C1C;
+		width: 50%;
+		transform: translateX(100%);
+		transition: transform 0.5s ease-in;
+		z-index: 1;
+	}
+	.nav-links li {
+		opacity: 0;
+	}
+	.hamburger {
+		display: block;
+		cursor: pointer;
+	}
+}
+
+.nav-active {
+	transform: translateX(0%);
+}
+
+@keyframes navLinkFade{
+	from{
+		opacity: 0;
+		transform: translate(50px);
+	}
+	to{
+		opacity: 1;
+		transform: translate(0px);
+	}
+}
+
+.toggle .line1 {
+	transform: rotate(-45deg) translate(-5px, 6px);
+}
+.toggle .line2 {
+	opacity: 0;
+}
+.toggle .line3 {
+	transform: rotate(45deg) translate(-4px, -5px);
+}
+
+.logo {
+	margin-top: 1rem;
+	margin-left: 3rem;
+	width: 7rem;
+	height: 4rem;
+}
+
+
+.design p {
+	color: white;
+	font-family: Segoe UI;
+	font-size: 5rem;
+	
+}
+
+

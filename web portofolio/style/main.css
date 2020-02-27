@@ -1,0 +1,213 @@
+html {
+	font-size: 62.5%;
+}
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;;
+}
+body{
+	background-color:#1C1C1C;
+}
+nav {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	min-height: 8vh;
+	font-family: Segoe UI;
+}
+.logo {
+	margin-top: 1rem;
+	width: 7rem;
+	height: 4rem;
+}
+.nav-links {
+	display: flex;
+	width: 50%;
+	justify-content: space-around;
+}
+
+.nav-links a {
+	color: white;
+	text-decoration: none;
+	letter-spacing: 3px;
+	text-transform: uppercase;
+	font-size: 2.0rem;
+}
+
+.nav-links li {
+	list-style: none;
+}
+.hamburger {
+	display: none;
+}
+
+.hamburger div {
+	width: 20px;
+	height: 2px;
+	background-color: white;
+	margin: 5px;
+	transition: all 0.3s ease;
+}
+nav li {
+	position: relative;
+	top: 5%;
+}
+nav a:hover {
+	color: #8b8b8b;
+}
+
+nav a::before {
+	content: '';
+	display: block;
+	height: 0.3rem;
+	width: 0%;
+	background-color: white;
+	position: absolute;
+	top: 0;
+	transition: ease-in-out 250ms;
+}
+
+nav a:hover::before {
+	width: 100%;
+}
+
+@media screen and (max-width: 1024px) {
+	body {
+		overflow-x: hidden;
+	}
+	.nav-links {
+		width: 60%;
+	}
+	.myphoto {
+	width: 35rem;
+	height: 10rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: auto;
+	display: none;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	body {
+		overflow-x: hidden;
+	}
+	nav a::before {
+	display: none;
+	}
+	.kiri {
+		position: static;
+		margin-left :150px;
+	}
+	.kanan{
+		position: static;
+		margin-left: 150px;
+		margin-top: 30px;
+	}
+	div .myphoto {
+	width: 55rem;
+	height: 43rem;
+	align-items: center;
+	margin-top: 17%;
+	}
+	.nav-links {
+		position: absolute;
+		right: 0px;
+		height: 92vh;
+		top: 8vh;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		background-color: #1C1C1C;
+		width: 50%;
+		transform: translateX(100%);
+		transition: transform 0.5s ease-in;
+	}
+	.nav-links li {
+		opacity: 0;
+	}
+	.hamburger {
+		display: block;
+		cursor: pointer;
+	}
+}
+
+.nav-active {
+	transform: translateX(0%);
+}
+
+@keyframes navLinkFade{
+	from{
+		opacity: 0;
+		transform: translate(50px);
+	}
+	to{
+		opacity: 1;
+		transform: translate(0px);
+	}
+}
+
+.toggle .line1 {
+	transform: rotate(-45deg) translate(-5px, 6px);
+}
+.toggle .line2 {
+	opacity: 0;
+}
+.toggle .line3 {
+	transform: rotate(45deg) translate(-4px, -5px);
+}
+
+.myphoto {
+	width: 80rem;
+	height: 60rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: auto;
+	z-index: 1;
+}
+
+body {
+	overflow-x: hidden;
+}
+
+.flex {
+	width: 1363px;
+	height: 600px;
+	font-size: 3.8rem;
+	color: white;
+	font-family: Segoe UI;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+}
+
+@media  screen and (min-width: 1200px) {
+	.flex {
+		position: relative;
+		z-index: 2;
+		top: 0;
+		height: 100%;
+		margin-top: -20%;
+		padding: 100px;
+		display: flex;
+	}
+	.kiri {
+		flex:1;
+		position: absolute;
+		left: 25%;
+		transform: translate(-25%);
+	}
+	.kanan {
+		flex:1;
+		position: absolute;
+		right: 17%;
+		transform: translate(-17%);
+	}
+
+	.kiri #up {
+		padding-left: 80px; 
+
+	}
+
