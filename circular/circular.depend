@@ -1,0 +1,12 @@
+# depslib dependency file v1.0
+1582362536 source:d:\coding\c++\circular\cdll_1301194292.cpp
+	<iostream>
+	"cdll_1301194292.h"
+
+1582362536 d:\coding\c++\circular\cdll_1301194292.h
+	<iostream>
+
+1582362536 source:d:\coding\c++\circular\main.cpp
+	<iostream>
+	"cdll_1301194292.h"
+
