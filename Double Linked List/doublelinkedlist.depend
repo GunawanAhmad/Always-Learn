@@ -1,0 +1,12 @@
+# depslib dependency file v1.0
+1581851210 source:d:\coding\c++\doublelinkedlist\main.cpp
+	<iostream>
+	"doublelinkedlist.h"
+
+1581851267 d:\coding\c++\doublelinkedlist\doublelinkedlist.h
+	<iostream>
+
+1581850062 source:d:\coding\c++\doublelinkedlist\doublelinkedlist.cpp
+	"doublelinkedlist.h"
+	<iostream>
+
