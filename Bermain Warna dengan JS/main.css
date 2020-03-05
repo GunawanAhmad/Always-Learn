@@ -1,0 +1,27 @@
+html {
+    font-family: Poppins;
+}
+
+.container {
+    margin: 200px 50%;
+}
+
+.title h1 {
+    text-align: center;
+
+}
+
+.warna {
+    text-align: center;
+}
+
+.tombol {
+    text-align: center;
+    margin-top: 20px;
+}
+
+button {
+    border-radius: 20px;
+    width: 100px;
+    height: 30px;
+}
