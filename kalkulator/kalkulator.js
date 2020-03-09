@@ -7,13 +7,13 @@ function cari1() {
             var tombolClick = e.target;
             var nilaiTombol = tombolClick.innerText;
             if (nilaiTombol == 'C') {
-                layar.value = ''
+                layar.innerText = ''
             } else if (nilaiTombol == 'Del') {
-                layar.value = layar.value.slice(0, 1);
+                layar.innerText = layar.innerText.slice(0, -1);
             } else if (nilaiTombol == '=') {
-                layar.value = eval(layar.value);
+                layar.innerText = eval(layar.innerText);
             } else {
-                layar.value = layar.value + nilaiTombol;
+                layar.innerText = layar.innerText + nilaiTombol;
             }
 
         });
